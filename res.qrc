@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Input.wav</file>
+        <file>Split1.wav</file>
+        <file>Split2.wav</file>
+        <file>Merge.wav</file>
+        <file>file.jpg</file>
+        <file>new.jpg</file>
+        <file>playall.jpg</file>
+        <file>prev.jpg</file>
+        <file>reset.jpg</file>
+        <file>next.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>601</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLCDNumber" name="lcd">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NowStep</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>601</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNewSession"/>
+   <addaction name="actionReadFile"/>
+   <addaction name="actionNextStep"/>
+   <addaction name="actionPreviosStep"/>
+   <addaction name="actionPlayAll"/>
+   <addaction name="actionReset"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNewSettings">
+   <property name="text">
+    <string>set DMFB info</string>
+   </property>
+  </action>
+  <action name="actionNewSession">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new.jpg</normaloff>:/new.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>NewSession</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionReadFile">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/file.jpg</normaloff>:/file.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>ReadFile</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionNextStep">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/next.jpg</normaloff>:/next.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>NextStep</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="actionPreviosStep">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/prev.jpg</normaloff>:/prev.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>PreviousStep</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="actionPlayAll">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/playall.jpg</normaloff>:/playall.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>PlayAll</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/reset.jpg</normaloff>:/reset.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
